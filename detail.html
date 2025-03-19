@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T-Shirt Details</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="detail.css">
+    
+</head>
+<body>
+    <div class="container">
+        <div class="product-detail">
+            <div class="product-gallery">
+                <div class="main-image">
+                    <div class="image-slider" id="imageSlider"></div>
+                    <button class="slider-nav prev" id="prevBtn">
+                        <i class='bx bx-chevron-left'></i>
+                    </button>
+                    <button class="slider-nav next" id="nextBtn">
+                        <i class='bx bx-chevron-right'></i>
+                    </button>
+                </div>
+                <div class="thumbnail-track" id="thumbnailTrack"></div>
+            </div>
+
+            <div class="product-info">
+                <div class="product-header">
+                    <h1 class="product-title"></h1>
+                    <div class="product-meta">
+                        <div class="ratings">
+                            <div class="stars"></div>
+                            <span class="review-count"></span>
+                        </div>
+                        <div class="product-id"></div>
+                    </div>
+                </div>
+
+                <div class="price-container">
+                    <div class="price-wrapper">
+                        <span class="original-price"></span>
+                        <span class="current-price"></span>
+                    </div>
+                    <span class="discount-badge"></span>
+                </div>
+
+                <div class="color-options">
+                    <h3>Color Options</h3>
+                    <div class="color-selector" id="colorSelector"></div>
+                </div>
+
+                <div class="size-options">
+                    <div class="size-header">
+                        <h3>Select Size</h3>
+                        <button class="size-guide-btn">Size Guide</button>
+                    </div>
+                    <div class="size-selector" id="sizeSelector"></div>
+                </div>
+
+                <div class="quantity-selector">
+                    <h3>Quantity</h3>
+                    <div class="quantity-controls">
+                        <button class="qty-btn minus">-</button>
+                        <input type="number" value="1" min="1" max="10" id="quantity">
+                        <button class="qty-btn plus">+</button>
+                    </div>
+                </div>
+
+                <div class="action-buttons">
+                    <button class="btn-primary btn-buy">Buy Now</button>
+                    <button class="btn-secondary btn-cart">
+                        Add to Cart
+                        <i class='bx bx-cart-add'></i>
+                    </button>
+                </div>
+
+                <div class="product-description">
+                    <h3>Product Details</h3>
+                    <div class="description-content"></div>
+                </div>
+
+                <div class="product-features">
+                    <div class="feature">
+                        <i class='bx bx-check-shield'></i>
+                        <span>100% Original Product</span>
+                    </div>
+                    <div class="feature">
+                        <i class='bx bx-refresh'></i>
+                        <span>7-Day Return Policy</span>
+                    </div>
+                    <div class="feature">
+                        <i class='bx bxs-truck'></i>
+                        <span>Free Shipping</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="similar-products">
+            <h2>You May Also Like</h2>
+            <div class="products-grid" id="similarProducts"></div>
+        </div>
+    </div>
+
+    <script src="products.js"></script>
+    <script src="detail.js"></script>
+</body>
+</html>

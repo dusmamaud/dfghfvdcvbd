@@ -447,7 +447,44 @@
           </div>
       </div>
   </section>
-  
+  <section class="products-section">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="title">Featured Collection</h2>
+            <p class="subtitle">Discover our premium T-shirt collection</p>
+        </div>
+        
+        <div class="filter-bar">
+            <div class="filter-groups">
+                <select class="filter-select">
+                    <option value="all">All Categories</option>
+                    <option value="men">Men's T-Shirts</option>
+                    <option value="women">Women's T-Shirts</option>
+                </select>
+                <select class="filter-select">
+                    <option value="featured">Featured</option>
+                    <option value="newest">Newest</option>
+                    <option value="price-low">Price: Low to High</option>
+                    <option value="price-high">Price: High to Low</option>
+                </select>
+            </div>
+            <div class="view-options">
+                <button class="view-btn active" data-view="grid">
+                    <i class='bx bxs-grid'></i>
+                </button>
+                <button class="view-btn" data-view="list">
+                    <i class='bx bx-list-ul'></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="products-grid" id="productList"></div>
+
+        <div class="load-more">
+            <button class="btn-load-more">Load More</button>
+        </div>
+    </div>
+</section>
 
     <script src="script.js"></script>
    
